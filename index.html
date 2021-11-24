@@ -8,13 +8,14 @@
         <!--FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&family=Red+Hat+Display:wght@300&family=Handlee&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" charset="UTF-8"></script>
+        <script src="script.js" charset="UTF-8" defer></script>
     </head>
 
     <body>
+
         <main id="calculatorBody">
             <p id="calculatorDisplay"></p>
             
@@ -85,5 +86,41 @@
 
             </div>
         </main>
+
+        <aside>
+
+            
+            <ul class="paperSheet" id="handCalc">
+                <li class="handTitle">
+                    <label for="operator1">1)Escreva um valor:</label>
+                </li>
+                <li>
+                    <input type="text" id="operator1" />
+                </li>
+            
+                <li class="handTitle">
+                    <label for="operator2">2)Escreva outro valor:</label>
+                </li>
+                <li>
+                    <input type="text" id="operator2" />
+                </li>
+
+                <li>
+                    <p class="handTitle">3)Escolha uma operação:</p>
+                    <button type="button" class="handButton" id="handSum">+</button>
+                    <button type="button" class="handButton" id="handSub">-</button>
+                    <button type="button" class="handButton" id="handMul">x</button>
+                    <button type="button" class="handButton" id="handDiv">/</button>
+                </li>
+
+                <li>
+                    <p id="handResult">
+                        
+                    </p>
+                </li>
+            </ul>
+
+        </aside>
+
     </body>
 </html>
