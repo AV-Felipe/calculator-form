@@ -13,6 +13,7 @@ ul {
 }
 
 body {
+    height: 100vh;
     min-width: 375px;
     display: flex;
     justify-content: center;
@@ -22,7 +23,7 @@ body {
     row-gap: 15px;
     background-image: url(assets/images/Wood-Pattern-3.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* FONTS */
