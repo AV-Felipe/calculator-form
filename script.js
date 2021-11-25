@@ -2,6 +2,7 @@
 let valuesArray = [undefined, undefined];
 const operatorOne = document.getElementById('operator1');
 const operatorTwo = document.getElementById('operator2');
+const resultField = document.getElementById('handResult');
 //operation related elements
 const sumOperation = document.getElementById('handSum');
 const subtractionOperation = document.getElementById('handSub');
@@ -33,6 +34,9 @@ function enterValue() {
 // perform operations
 
 sumOperation.addEventListener('click', performCalculation);
+subtractionOperation.addEventListener('click', performCalculation);
+multiplicationOperation.addEventListener('click', performCalculation);
+divisionOperation.addEventListener('click', performCalculation);
 
 function performCalculation() {
     console.log(operatorOne.value);
@@ -46,5 +50,32 @@ function performCalculation() {
         return;
     }
 
+    console.log(this.innerHTML);
+
+    let operation = this.innerHTML;
+    let result;
+
+    switch (operation){
+        case '+':
+            result = (valuesArray[0] * 1) + (valuesArray[1] * 1);
+            break;
+        
+        case '-':
+            result = (valuesArray[0] * 1) - (valuesArray[1] * 1);
+            break;
+        
+        case 'x':
+            result = (valuesArray[0] * 1) * (valuesArray[1] * 1);
+            break;
+
+        case '/':
+            result = (valuesArray[0] * 1) / (valuesArray[1] * 1);
+            break;
+
+    }
+
+    console.log(result);
+
+    resultField.innerHTML = String(result);
 
 }
