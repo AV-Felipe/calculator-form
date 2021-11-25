@@ -43,10 +43,10 @@ function performCalculation() {
     
     //field validation
     if(valuesArray[0] === undefined || isNaN(valuesArray[0])){
-        operatorOne.value= `digite um número aqui`;
+        operatorOne.placeholder= `digite um número`;
         return;
     }else if(valuesArray[1] === undefined || isNaN(valuesArray[1])){
-        operatorTwo.value= `digite um número aqui`;
+        operatorTwo.placeholder= `digite um número`;
         return;
     }
 
