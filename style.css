@@ -67,6 +67,8 @@ body {
     margin-bottom: 35px;
     background-color: var(--display-color-op2);
     border: 3px inset var(--body-inset-color);
+    padding-left: 5px;
+    font-size: 32px;
 }
 
 /* BUTTONS */
